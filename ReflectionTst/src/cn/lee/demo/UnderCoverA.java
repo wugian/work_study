@@ -5,10 +5,12 @@ import java.util.Observer;
 
 public class UnderCoverA implements Observer {
 
-	@Override
-	public void update(Observable arg0, Object arg1) {
-		// TODO Auto-generated method stub
+	private String time;
 
+	@Override
+	public void update(Observable o, Object arg) {
+		time = (String) arg;
+		System.out.println("卧底A接到消息，行动时间为：" + time);
 	}
 
 }
