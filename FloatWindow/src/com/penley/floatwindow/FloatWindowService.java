@@ -18,12 +18,12 @@ import android.os.IBinder;
 public class FloatWindowService extends Service {
 
 	/**
-	 * 用于在线程中创建或移除悬浮窗。
+	 * 用于在线程中创建或移除悬浮窗
 	 */
 	private Handler handler = new Handler();
 
 	/**
-	 * 定时器，定时进行检测当前应该创建还是移除悬浮窗。
+	 * 定时器，定时进行检测当前应该创建还是移除悬浮窗
 	 */
 	private Timer timer;
 
@@ -54,34 +54,34 @@ public class FloatWindowService extends Service {
 
 		@Override
 		public void run() {
-			// 当前界面是桌面，且没有悬浮窗显示，则创建悬浮窗。
-			if (isHome() && !FloatWindowManager.isWindowShowing()) {
+			// 当前界面是桌面，且没有悬浮窗显示，则创建悬浮窗
+			if (isHome() && !MyWindowManager.isWindowShowing()) {
 				handler.post(new Runnable() {
 					@Override
 					public void run() {
-						FloatWindowManager
+						MyWindowManager
 								.createFloatWindow(getApplicationContext());
 					}
 				});
 			}
-			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗。
-			else if (!isHome() && FloatWindowManager.isWindowShowing()) {
+			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗
+			else if (!isHome() && MyWindowManager.isWindowShowing()) {
 				handler.post(new Runnable() {
 					@Override
 					public void run() {
-						FloatWindowManager
+						MyWindowManager
 								.removeFloatWindow(getApplicationContext());
-						FloatWindowManager
+						MyWindowManager
 								.removeFunctionWindow(getApplicationContext());
 					}
 				});
 			}
-			// 当前界面是桌面，且有悬浮窗显示，则更新内存数据。
-			else if (isHome() && FloatWindowManager.isWindowShowing()) {
+			// 当前界面是桌面，且有悬浮窗显示，则更新内存数据
+			else if (isHome() && MyWindowManager.isWindowShowing()) {
 				handler.post(new Runnable() {
 					@Override
 					public void run() {
-						FloatWindowManager
+						MyWindowManager
 								.updateUsedPercent(getApplicationContext());
 					}
 				});
@@ -112,6 +112,7 @@ public class FloatWindowService extends Service {
 		List<ResolveInfo> resolveInfo = packageManager.queryIntentActivities(
 				intent, PackageManager.MATCH_DEFAULT_ONLY);
 		for (ResolveInfo ri : resolveInfo) {
+			// System.out.println(ri.toString());
 			names.add(ri.activityInfo.packageName);
 		}
 		return names;

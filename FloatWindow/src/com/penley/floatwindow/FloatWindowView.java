@@ -3,26 +3,27 @@ package com.penley.floatwindow;
 import java.lang.reflect.Field;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-public class FloatWindowView extends LinearLayout implements OnTouchListener {
+/**
+ * 用于悬浮窗口的布局管理，包括基本操作及移动
+ * 
+ * @author Penley
+ *
+ */
+public class FloatWindowView extends LinearLayout {
 
 	/**
-	 * 记录小悬浮窗的宽度
+	 * 记录悬浮窗的宽度高度
 	 */
-	public static int viewWidth;
-
-	/**
-	 * 记录小悬浮窗的高度
-	 */
-	public static int viewHeight;
+	public static int floatWidth;
+	public static int floatHeight;
 
 	/**
 	 * 记录系统状态栏的高度
@@ -30,89 +31,90 @@ public class FloatWindowView extends LinearLayout implements OnTouchListener {
 	private static int statusBarHeight;
 
 	/**
-	 * 用于更新小悬浮窗的位置
+	 * 用于更新悬浮窗的位置
 	 */
 	private WindowManager windowManager;
 
 	/**
-	 * 小悬浮窗的参数
+	 * 悬浮窗的参数
 	 */
-	private WindowManager.LayoutParams mParams;
+	private WindowManager.LayoutParams layoutParams;
 
 	/**
-	 * 记录当前手指位置在屏幕上的横坐标值
+	 * 记录当前手指位置在屏幕上的横纵坐标值
 	 */
-	private float xInScreen;
+	private float xFingerPos;
+	private float yFingerPos;
 
 	/**
-	 * 记录当前手指位置在屏幕上的纵坐标值
+	 * 记录手指按下时在屏幕上的横纵坐标的值
 	 */
-	private float yInScreen;
+	private float xFingerDownPos;
+	private float yFingerDownPos;
 
 	/**
-	 * 记录手指按下时在屏幕上的横坐标的值
+	 * 悬浮窗的横纵坐标的值
 	 */
-	private float xDownInScreen;
-
-	/**
-	 * 记录手指按下时在屏幕上的纵坐标的值
-	 */
-	private float yDownInScreen;
-
-	/**
-	 * 记录手指按下时在小悬浮窗的View上的横坐标的值
-	 */
-	private float xInView;
-
-	/**
-	 * 记录手指按下时在小悬浮窗的View上的纵坐标的值
-	 */
-	private float yInView;
+	private float xPos;
+	private float yPos;
 
 	public FloatWindowView(final Context context) {
 		super(context);
+		// init params
 		windowManager = (WindowManager) context
 				.getSystemService(Context.WINDOW_SERVICE);
-		LayoutInflater.from(context).inflate(R.layout.a_window, this);
-		View view = findViewById(R.id.ids);
-		viewWidth = view.getLayoutParams().width;
-		viewHeight = view.getLayoutParams().height;
+		LayoutInflater.from(context).inflate(R.layout.float_window, this);
+		View view = findViewById(R.id.float_lyt);
+		floatWidth = view.getLayoutParams().width;
+		floatHeight = view.getLayoutParams().height;
+
+		Log.d("lovely", "viewHeight,viewWidth:" + floatHeight + ","
+				+ floatWidth);
+
 		Button percentView = (Button) findViewById(R.id.button1);
-		percentView.setText(FloatWindowManager.getUsedPercentValue(context));
-		percentView.setOnClickListener(new OnClickListener() {
-
+		percentView.setText(MyWindowManager.getUsedPercentValue(context));
+		// 监听按键的长按拖动及点击事件
+		percentView.setOnTouchListener(new OnTouchListener() {
 			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show();
-
+			public boolean onTouch(View v, MotionEvent event) {
+				return touchEvent(event);
 			}
 		});
 	}
 
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
+	/**
+	 * 实现托动功能
+	 * 
+	 * @param event
+	 * @return
+	 */
+	public boolean touchEvent(MotionEvent event) {
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
+			Log.d("lovely", "ACTION_DOWN");
 			// 手指按下时记录必要数据,纵坐标的值都需要减去状态栏高度
-			xInView = event.getX();
-			yInView = event.getY();
-			xDownInScreen = event.getRawX();
-			yDownInScreen = event.getRawY() - getStatusBarHeight();
-			xInScreen = event.getRawX();
-			yInScreen = event.getRawY() - getStatusBarHeight();
+			xPos = event.getX();
+			yPos = event.getY();
+			xFingerDownPos = event.getRawX();
+			yFingerDownPos = event.getRawY() - getStatusBarHeight();
+			xFingerPos = event.getRawX();
+			yFingerPos = event.getRawY() - getStatusBarHeight();
+			Log.d("lovely", "ACTION_DOWN");
 			break;
 		case MotionEvent.ACTION_MOVE:
-			xInScreen = event.getRawX();
-			yInScreen = event.getRawY() - getStatusBarHeight();
-			// 手指移动的时候更新小悬浮窗的位置
+			xFingerPos = event.getRawX();
+			yFingerPos = event.getRawY() - getStatusBarHeight();
+			// 手指移动的时候更新悬浮窗的位置
 			updateViewPosition();
+			Log.d("lovely", "ACTION_MOVE:");
 			break;
 		case MotionEvent.ACTION_UP:
-			// 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件。
-			if (xDownInScreen == xInScreen && yDownInScreen == yInScreen) {
-				openBigWindow();
+			// 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件
+			if (xFingerDownPos == xFingerPos && yFingerDownPos == yFingerPos) {
+				Log.d("lovely", "Clicked:");
+				openFunctionWindow();
 			}
+			Log.d("lovely", "ACTION_UP:");
 			break;
 		default:
 			break;
@@ -121,36 +123,36 @@ public class FloatWindowView extends LinearLayout implements OnTouchListener {
 	}
 
 	/**
-	 * 将小悬浮窗的参数传入，用于更新小悬浮窗的位置。
+	 * 将悬浮窗的参数传入，用于更新悬浮窗的位置
 	 * 
 	 * @param params
-	 *            小悬浮窗的参数
+	 *            悬浮窗的参数
 	 */
-	public void setParams(WindowManager.LayoutParams params) {
-		mParams = params;
+	public void setLayoutParams(WindowManager.LayoutParams params) {
+		layoutParams = params;
 	}
 
 	/**
-	 * 更新小悬浮窗在屏幕中的位置。
+	 * 更新悬浮窗在屏幕中的位置
 	 */
 	private void updateViewPosition() {
-		mParams.x = (int) (xInScreen - xInView);
-		mParams.y = (int) (yInScreen - yInView);
-		windowManager.updateViewLayout(this, mParams);
+		layoutParams.x = (int) (xFingerPos - xPos);
+		layoutParams.y = (int) (yFingerPos - yPos);
+		windowManager.updateViewLayout(this, layoutParams);
 	}
 
 	/**
-	 * 打开大悬浮窗，同时关闭小悬浮窗。
+	 * 打开功能浮窗，同时关闭悬浮窗，need debug
 	 */
-	private void openBigWindow() {
-		FloatWindowManager.createFloatWindow(getContext());
-		FloatWindowManager.removeFunctionWindow(getContext());
+	private void openFunctionWindow() {
+		MyWindowManager.createFunctionWindow(getContext());
+		MyWindowManager.removeFloatWindow(getContext());
 	}
 
 	/**
-	 * 用于获取状态栏的高度。
+	 * 用于获取状态栏的高度
 	 * 
-	 * @return 返回状态栏高度的像素值。
+	 * @return 返回状态栏高度的像素值
 	 */
 	private int getStatusBarHeight() {
 		if (statusBarHeight == 0) {
@@ -160,40 +162,11 @@ public class FloatWindowView extends LinearLayout implements OnTouchListener {
 				Field field = c.getField("status_bar_height");
 				int x = (Integer) field.get(o);
 				statusBarHeight = getResources().getDimensionPixelSize(x);
+				Log.d("lovely", "statusBarHeight:" + statusBarHeight);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 		return statusBarHeight;
-	}
-
-	@Override
-	public boolean onTouch(View v, MotionEvent event) {
-		switch (event.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			// 手指按下时记录必要数据,纵坐标的值都需要减去状态栏高度
-			xInView = event.getX();
-			yInView = event.getY();
-			xDownInScreen = event.getRawX();
-			yDownInScreen = event.getRawY() - getStatusBarHeight();
-			xInScreen = event.getRawX();
-			yInScreen = event.getRawY() - getStatusBarHeight();
-			break;
-		case MotionEvent.ACTION_MOVE:
-			xInScreen = event.getRawX();
-			yInScreen = event.getRawY() - getStatusBarHeight();
-			// 手指移动的时候更新小悬浮窗的位置
-			updateViewPosition();
-			break;
-		case MotionEvent.ACTION_UP:
-			// 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件。
-			if (xDownInScreen == xInScreen && yDownInScreen == yInScreen) {
-				openBigWindow();
-			}
-			break;
-		default:
-			break;
-		}
-		return true;
 	}
 }
