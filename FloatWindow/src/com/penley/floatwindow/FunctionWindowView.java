@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+/**
+ * 功能窗口
+ * @author pc
+ *
+ */
 public class FunctionWindowView extends LinearLayout {
 	/**
 	 * 记录大悬浮窗的宽度高度
@@ -40,6 +45,7 @@ public class FunctionWindowView extends LinearLayout {
 			}
 
 		});
+		// 类似于popwindow点击其他地方消失
 		this.setOnClickListener(new OnClickListener() {
 
 			@Override

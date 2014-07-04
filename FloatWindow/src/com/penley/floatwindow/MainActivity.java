@@ -4,6 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+/**
+ * useless,just for launcher the service
+ * 
+ * @author Penley
+ *
+ */
 public class MainActivity extends Activity {
 
 	@Override

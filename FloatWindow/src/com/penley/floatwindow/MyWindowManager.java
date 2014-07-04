@@ -13,6 +13,11 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.TextView;
 
+/**
+ * 窗口按理器
+ * @author Penley
+ *
+ */
 public class MyWindowManager {
 
 	private static FloatWindowView floatWindow;// 悬浮窗View的实例

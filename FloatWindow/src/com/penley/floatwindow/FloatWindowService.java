@@ -64,7 +64,7 @@ public class FloatWindowService extends Service {
 					}
 				});
 			}
-			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗
+			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗,可以添加条件，使在其在应用中也显示，注释下面代码
 			else if (!isHome() && MyWindowManager.isWindowShowing()) {
 				handler.post(new Runnable() {
 					@Override
