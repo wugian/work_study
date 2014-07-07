@@ -49,8 +49,8 @@ public class MusicService extends Service {
 	public void playMusic(String path) {
 		Log.d("lovely", "playMusic");
 		String musicPath = "/mnt/sdcard2/KuwoMusic/music/My Love-WestLife.mp3";
-//		if (position % 2 != 1)
-//			musicPath = "/mnt/sdcard2/KuwoMusic/music/Breathless-Shayne Ward.mp3";
+		// if (position % 2 != 1)
+		// musicPath = "/mnt/sdcard2/KuwoMusic/music/Breathless-Shayne Ward.mp3";
 		try {
 			mediaPlayer.reset();// 把各项参数恢复到初始状态
 			mediaPlayer.setDataSource(musicPath);
