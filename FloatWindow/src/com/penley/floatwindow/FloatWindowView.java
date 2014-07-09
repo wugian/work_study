@@ -73,6 +73,7 @@ public class FloatWindowView extends LinearLayout {
 
 		Button percentView = (Button) findViewById(R.id.button1);
 		percentView.setText(MyWindowManager.getUsedPercentValue(context));
+		
 		// 监听按键的长按拖动及点击事件
 		percentView.setOnTouchListener(new OnTouchListener() {
 			@Override
@@ -91,7 +92,6 @@ public class FloatWindowView extends LinearLayout {
 	public boolean touchEvent(MotionEvent event) {
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
-			Log.d("lovely", "ACTION_DOWN");
 			// 手指按下时记录必要数据,纵坐标的值都需要减去状态栏高度
 			xPos = event.getX();
 			yPos = event.getY();
@@ -99,22 +99,18 @@ public class FloatWindowView extends LinearLayout {
 			yFingerDownPos = event.getRawY() - getStatusBarHeight();
 			xFingerPos = event.getRawX();
 			yFingerPos = event.getRawY() - getStatusBarHeight();
-			Log.d("lovely", "ACTION_DOWN");
 			break;
 		case MotionEvent.ACTION_MOVE:
 			xFingerPos = event.getRawX();
 			yFingerPos = event.getRawY() - getStatusBarHeight();
 			// 手指移动的时候更新悬浮窗的位置
 			updateViewPosition();
-			Log.d("lovely", "ACTION_MOVE:");
 			break;
 		case MotionEvent.ACTION_UP:
 			// 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件
 			if (xFingerDownPos == xFingerPos && yFingerDownPos == yFingerPos) {
-				Log.d("lovely", "Clicked:");
 				openFunctionWindow();
 			}
-			Log.d("lovely", "ACTION_UP:");
 			break;
 		default:
 			break;

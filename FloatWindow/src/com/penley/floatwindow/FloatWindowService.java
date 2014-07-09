@@ -15,6 +15,13 @@ import android.content.pm.ResolveInfo;
 import android.os.Handler;
 import android.os.IBinder;
 
+/**
+ * 程序应该各司其职，怎样才能灵活运用
+ * 这个程序的服务与架构写的不错，很容易理解，逻辑清淅。
+ * 
+ * @author Penley
+ *
+ */
 public class FloatWindowService extends Service {
 
 	/**
@@ -64,7 +71,7 @@ public class FloatWindowService extends Service {
 					}
 				});
 			}
-			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗,可以添加条件，使在其在应用中也显示，注释下面代码
+			// 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗与功能窗口,可以添加条件，使在其在应用中也显示，注释下面代码
 			else if (!isHome() && MyWindowManager.isWindowShowing()) {
 				handler.post(new Runnable() {
 					@Override
