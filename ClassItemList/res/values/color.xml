@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color
+		name="class_item_bg_color">#ebeaea</color>
+	<color
+		name="class_item_bg_sel_color">#d8e4f0</color>
+</resources>

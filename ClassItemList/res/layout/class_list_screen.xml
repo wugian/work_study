@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffededed"
+	android:orientation="vertical">
+	<ListView 
+		android:id="@+id/classItemListView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:cacheColorHint="#00000000"
+		android:divider="@drawable/divider_style"
+		android:dividerHeight="1px"
+		android:fastScrollEnabled="true">
+	</ListView>
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1.0dip">
+	</View>
+</LinearLayout>

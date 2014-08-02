@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/classGroupLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- item01 -->
+
+        <LinearLayout
+            android:id="@+id/classPartNameLay"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:background="@drawable/group_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/class_part_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/class_part_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="云学院"
+                android:textColor="#253441"
+                android:textSize="17sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_style" >
+
+        <LinearLayout
+            android:id="@+id/class_icon_layout"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="5px" >
+
+            <FrameLayout
+                android:id="@+id/lyPortrait"
+                android:layout_width="64dip"
+                android:layout_height="64dip" >
+
+                <ImageView
+                    android:id="@+id/class_item_img"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_class_icon" >
+                </ImageView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:layout_toRightOf="@id/class_icon_layout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/class_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="35px"
+                    android:ellipsize="marquee"
+                    android:text="总裁研修班"
+                    android:textColor="#666666"
+                    android:textSize="16dp"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/class_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/right_arrow" >
+        </ImageView>
+    </RelativeLayout>
+    <!--
+		<View android:layout_below="@+id/relativeLayout1"
+		android:layout_width="fill_parent" android:layout_height="1.0dip">
+		</View>
+    -->
+
+</LinearLayout>
