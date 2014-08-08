@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onGroupClicked(GroupView view, GroupBean group,
 					int position) {
+				//int oldPosition = listViewAdapter.gete
 				Toast.makeText(MainActivity.this, "I am " + group.getName(),
 						Toast.LENGTH_SHORT).show();
 			}

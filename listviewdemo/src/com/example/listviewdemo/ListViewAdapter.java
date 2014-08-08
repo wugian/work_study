@@ -9,13 +9,15 @@ import android.widget.BaseAdapter;
 
 public class ListViewAdapter extends BaseAdapter {
 
-	private static final int VIEW_TYPE_GROUP = 0;
-	private static final int VIEW_TYPE_CHILD = 1;
+	private static final int VIEW_TYPE_GROUP = 0x00;
+	private static final int VIEW_TYPE_CHILD = 0x01;
 
 	private Context context;
 	private List<GroupBean> groupList;
 	private OnGroupClickListener groupListener;
 	private OnChildClickListener childListener;
+
+	private int expandGroupPosition = -1;
 
 	public ListViewAdapter(Context context, List<GroupBean> groupList) {
 		this.context = context;
@@ -149,6 +151,14 @@ public class ListViewAdapter extends BaseAdapter {
 
 	public void setChildListener(OnChildClickListener childListener) {
 		this.childListener = childListener;
+	}
+
+	public int getExpandGroupPosition() {
+		return expandGroupPosition;
+	}
+
+	public void setExpandGroupPosition(int expandGroupPosition) {
+		this.expandGroupPosition = expandGroupPosition;
 	}
 
 	public void destroy() {

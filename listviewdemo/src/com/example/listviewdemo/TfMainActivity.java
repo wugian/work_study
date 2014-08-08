@@ -11,13 +11,14 @@ import android.widget.Toast;
 public class TfMainActivity extends Activity {
 
 	private ListViewAdapter listViewAdapter;
+	List<GroupBean> itemList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// 数据
-		List<GroupBean> itemList = getListData();
+		itemList = getListData();
 		// view和adapter
 		ListView listView = (ListView) findViewById(R.id.listview);
 		listViewAdapter = new ListViewAdapter(this, itemList);
@@ -26,6 +27,17 @@ public class TfMainActivity extends Activity {
 			@Override
 			public void onGroupClicked(GroupView view, GroupBean group,
 					int position) {
+				int oldPosition = listViewAdapter.getExpandGroupPosition();
+				if (oldPosition != position) {
+					if (oldPosition != -1)
+						itemList.get(oldPosition).setExpand(false);
+					itemList.get(position).setExpand(true);
+					listViewAdapter.setExpandGroupPosition(position);
+					listViewAdapter.notifyDataSetChanged();
+					for (int i = 0; i < itemList.size(); i++) {
+						System.out.println(itemList.get(i).isExpand());
+					}
+				}
 				Toast.makeText(TfMainActivity.this, "I am " + group.getName(),
 						Toast.LENGTH_SHORT).show();
 			}
