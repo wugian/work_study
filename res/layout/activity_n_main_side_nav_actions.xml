@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/nav_theme_shop" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_nav_theme_shop" />
+            <TextView android:text="@string/activity_nav_theme_station" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/nav_my_theme" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_nav_my_theme" />
+            <TextView android:text="@string/activity_nav_my_theme" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/nav_settings" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_nav_setting" />
+            <TextView android:text="@string/activity_nav_setting" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/nav_panel_setting" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_nav_panel_setting" />
+            <TextView android:text="@string/activity_nav_panel_setting" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/nav_help" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_help" />
+            <TextView android:text="@string/activity_nav_panel_help" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/nav_uninstall" style="@style/Side_Navigation_Item">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nav_uninstall" />
+            <TextView android:text="@string/activity_nav_panel_uninstall" style="@style/Side_Navigation_Item_Text" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <View android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/shere" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shere" android:layout_width="fill_parent" android:layout_height="36.0dip" android:weightSum="2.0" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/nav_feedback" android:background="@drawable/selector_leftbg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_feedback" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff62c3c9" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/feedback" />
+        </LinearLayout>
+        <View android:background="#ffc4c4c4" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/nav_rate" android:background="@drawable/selector_leftbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_rate" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff62c3c9" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/settings_rate" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/adlink" android:background="@drawable/ad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <ImageView android:id="@id/iv_price_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/coins" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="1.0dip" android:layout_height="32.0dip" android:layout_weight="0.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff009944" android:gravity="center" android:id="@id/btn_download" android:layout_width="60.0dip" android:layout_height="80.0dip" android:layout_weight="0.0" />
+</LinearLayout>

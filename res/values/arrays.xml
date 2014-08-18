@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screenshot_modes">
+        <item>@string/screenshot_mode_defaut</item>
+        <item>@string/screenshot_mode_power_home</item>
+        <item>@string/screenshot_mode_power_volume</item>
+    </string-array>
+    <string-array name="screenshot_voice_switch">
+        <item>@string/screenshot_voice_on</item>
+        <item>@string/screenshot_voice_off</item>
+    </string-array>
+    <string-array name="screenshot_delay">
+        <item>@string/activity_setting_screenshot_delay_0</item>
+        <item>@string/activity_setting_screenshot_delay_3</item>
+        <item>@string/activity_setting_screenshot_delay_5</item>
+        <item>@string/activity_setting_screenshot_delay_10</item>
+        <item>@string/activity_setting_screenshot_delay_20</item>
+    </string-array>
+    <string-array name="arr_screenshot_dir">
+        <item>@string/ac_setting_screenshot_dir_root</item>
+        <item>@string/ac_setting_screenshot_dir_image</item>
+        <item>@string/ac_setting_screenshot_dir_dcim</item>
+        <item>@string/ac_setting_screenshot_dir_et</item>
+        <item>@string/ac_setting_screenshot_dir_customize</item>
+    </string-array>
+</resources>

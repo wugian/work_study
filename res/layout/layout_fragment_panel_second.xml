@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/top" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingRight="4.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_0" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_1" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_2" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_3" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_4" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_5" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_6" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_7" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_second_panel_8" android:layout_width="@dimen/width_floating_panel_item" android:layout_height="@dimen/height_floating_panel_item" android:layout_centerInParent="true">
+            <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/size_floating_panel_icon" android:layout_height="@dimen/size_floating_panel_icon" />
+            <TextView android:textSize="@dimen/size_floating_panel_icon_text" android:textColor="@color/selector_color_icon" android:gravity="center" android:id="@id/label" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/point2" />
+        <ImageView android:id="@id/point2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/point" />
+    </LinearLayout>
+</RelativeLayout>

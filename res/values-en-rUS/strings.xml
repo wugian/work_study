@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slogan">EZ Tools</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="error_no_email_client">"Email client not found on your phone.
+Please send us an email: 
+shereworkshop@gmail.com"</string>
+    <string name="about_we">About us</string>
+    <string name="about_content">"Make Android more easily.
+
+Contact us：shereworkshop@gmail.com"</string>
+    <string name="simple_tools">EZ Tools</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="input_app_name">App name:</string>
+    <string name="input_package_name">Package:</string>
+    <string name="input_version">Version:</string>
+    <string name="input_phone_type">Phone:</string>
+    <string name="input_android_version">And Version:</string>
+    <string name="feedback_success">Thank you for your feedback.</string>
+    <string name="hint_write_here">Put your feedback here :)</string>
+    <string name="opinion_box">Feedback</string>
+    <string name="hint_email">Email (option)</string>
+    <string name="commit">OK</string>
+    <string name="auto_update">Auto Update</string>
+    <string name="intro_auto_update">These is a new version published and you connecting the wifi, it will auto upgrade to newest version.</string>
+    <string name="remove_ad">Clean AD</string>
+    <string name="downloading">downloading.</string>
+    <string name="download_failure">download failed.</string>
+    <string name="click_to_install">Click to install</string>
+    <string name="info_updatable_now">New version was prepared, click to install.</string>
+    <string name="more_setting">more settings</string>
+    <string name="ask_exit">Exit ?</string>
+    <string name="exit">Exit</string>
+    <string name="more">More</string>
+    <string name="info_remove_ad">"您的积分：%1$s
+消耗%2$s积分便可永久去除程序中的所有广告(程序升级后不受影响)。"</string>
+    <string name="earn_point">免费获得积分</string>
+    <string name="operation_success">Succeed</string>
+    <string name="info_remove_ad_success">"清除广告成功！完全退出程序后再次进入将不会出现广告。
+注：请不要随意在系统的设置中清除此程序的数据。
+感谢您的支持。"</string>
+    <string name="info_remove_ad_failure">消耗积分失败，请稍后再试。</string>
+    <string name="done">Done</string>
+    <string name="rate_me">Encourage us</string>
+    <string name="error_no_market_client">"Can't not found Google Play on your device."</string>
+    <string name="info_rate">"Thanks for you are using EZ Tools.
+If you are willing to, please lend EZ Tools a little strength.
+"</string>
+    <string name="rate">Rate</string>
+    <string name="not_now">Not now</string>
+    <string name="free_for_you">Free for you</string>
+    <string name="close">Close</string>
+    <string name="info_sorry">"EZTools support remove AD now!
+We are so sorry that EZTools has an AD,we are try our best make EZTools more powerful.EZTools is free,so we have to show an AD in it, if not, we would not exists, sorry again.
+We hope you can understand :)"</string>
+    <string name="n_updatable">%1$s updatable</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="checking_update">Checking update data.</string>
+    <string name="version_newest">Current version was newest.</string>
+</resources>

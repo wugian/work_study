@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lay_search" android:paddingLeft="4.0dip" android:paddingTop="5.0dip" android:paddingRight="4.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ic_app_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <EditText android:textSize="20.0sp" android:id="@id/et_search_app" android:paddingLeft="4.0dip" android:paddingTop="4.0px" android:paddingRight="60.0dip" android:paddingBottom="4.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/search_app" android:singleLine="true" android:layout_toRightOf="@id/ic_app_search" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <GridView android:id="@id/gv_app" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:scrollingCache="true" android:verticalSpacing="30.0dip" android:numColumns="4" android:fastScrollEnabled="true" />
+    </RelativeLayout>
+</LinearLayout>

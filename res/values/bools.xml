@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_pref_show_shadow">true</bool>
+</resources>

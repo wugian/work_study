@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slogan">EZ Tools</string>
+    <string name="settings">设置</string>
+    <string name="feedback">反馈</string>
+    <string name="error_no_email_client">"感谢你的支持.
+你的手机尚没安装任何邮件客户端.
+请将你的意见反馈到 : shereworkshop@gmail.com"</string>
+    <string name="about_we">关于我们</string>
+    <string name="about_content">"EZ Tools 是由一群热爱手机应用的苦逼程序员和设计师自发组织打造的一系列产品，追求的是简单的用户体验、简约美。
+
+联系我们：shereworkshop@gmail.com"</string>
+    <string name="simple_tools">EZ Tools</string>
+    <string name="feedback_title">反馈信息</string>
+    <string name="input_app_name">App name:</string>
+    <string name="input_package_name">Package:</string>
+    <string name="input_version">Version:</string>
+    <string name="input_phone_type">Phone:</string>
+    <string name="input_android_version">And Version:</string>
+    <string name="feedback_success">感谢你对我们的支持</string>
+    <string name="hint_write_here">将你的想法写在这里 :)</string>
+    <string name="opinion_box">意见箱</string>
+    <string name="hint_email">邮箱（选填,方便我们回复您的问题）</string>
+    <string name="commit">提交</string>
+    <string name="auto_update">自动升级</string>
+    <string name="intro_auto_update">当设备有WIFI的情况并有新版本发布时，将自动升级为最新版本。</string>
+    <string name="remove_ad">清除广告</string>
+    <string name="downloading">正在下载中</string>
+    <string name="download_failure">下载失败</string>
+    <string name="click_to_install">点击即可安装</string>
+    <string name="info_updatable_now">程序已更新至最新版本,点击即可安装</string>
+    <string name="more_setting">更多设置</string>
+    <string name="ask_exit">退出程序?</string>
+    <string name="exit">退出</string>
+    <string name="more">更多</string>
+    <string name="info_remove_ad">"您的积分：%1$s
+消耗%2$s积分便可永久去除程序中的所有广告(程序升级后不受影响)。"</string>
+    <string name="earn_point">免费获得积分</string>
+    <string name="operation_success">操作成功</string>
+    <string name="info_remove_ad_success">"清除广告成功！完全退出程序后再次进入将不会出现广告。
+注：请不要随意在系统的设置中清除此程序的数据。
+感谢您的支持。"</string>
+    <string name="info_remove_ad_failure">消耗积分失败，请稍后再试。</string>
+    <string name="done">完成</string>
+    <string name="rate_me">给我们打打气</string>
+    <string name="error_no_market_client">无法打开Google Play</string>
+    <string name="info_rate">"感谢您对我们的支持.
+如果您愿意,请借我们一些力量 :)
+"</string>
+    <string name="rate">评论</string>
+    <string name="not_now">下次</string>
+    <string name="free_for_you">精心为您奉献</string>
+    <string name="close">关闭</string>
+    <string name="n_updatable">%1$s 新版本</string>
+    <string name="upgrade">手动升级</string>
+    <string name="checking_update">正在检查最新版本</string>
+    <string name="version_newest">当前版本已为最新版本</string>
+    <string name="feedback_content">在使用的过程中出现任何问题都可以反馈给我们,我们会尽力为你解决。</string>
+    <string name="close_app">关闭程序</string>
+    <string name="more_simple_tools">更多简单工具</string>
+    <string name="more_app">更多...等你</string>
+</resources>

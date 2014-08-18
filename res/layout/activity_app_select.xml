@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_weight="0.0" style="@style/Navigation_Bar">
+        <TextView android:id="@id/tv_title" style="@style/Text_Navigation_Title" />
+    </LinearLayout>
+    <View android:layout_weight="0.0" style="@style/Separator_Blue" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <GridView android:id="@id/gv_app" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_default_highlight" android:verticalSpacing="10.0dip" android:numColumns="3" />
+    </RelativeLayout>
+</LinearLayout>

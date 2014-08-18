@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slogan">EZ Tools</string>
+    <string name="settings">设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="error_no_email_client">"感谢你的支持.
+你的手机尚没安装任何邮件客户端.
+请将你的意见反馈到 : shereworkshop@gmail.com"</string>
+    <string name="about_we">关于我们</string>
+    <string name="about_content">"Simple Tools 是由一群热爱手机应用的苦逼程序员和设计师自发组织打造的一系列产品，追求的是简单的用户体验、简约美。
+"</string>
+    <string name="simple_tools">EZ Tools</string>
+    <string name="feedback_title">反馈信息</string>
+    <string name="input_app_name">App name:</string>
+    <string name="input_package_name">Package:</string>
+    <string name="input_version">Version:</string>
+    <string name="input_phone_type">Phone:</string>
+    <string name="input_android_version">And Version:</string>
+    <string name="feedback_success">感谢你对我们的支持</string>
+    <string name="hint_write_here">将你的想法写在这里 :)</string>
+    <string name="opinion_box">意见箱</string>
+    <string name="hint_email">邮箱（选填,方便我们回复您的问题）</string>
+    <string name="commit">提交</string>
+    <string name="auto_update">自动升级</string>
+    <string name="intro_auto_update">当设备有WIFI的情况并有新版本发布时，将自动升级为最新版本。</string>
+    <string name="remove_ad">清除广告</string>
+    <string name="downloading">正在下载中</string>
+    <string name="download_failure">下载失败</string>
+    <string name="click_to_install">点击即可安装</string>
+    <string name="info_updatable_now">程序已更新至最新版本,点击即可安装</string>
+    <string name="more_setting">更多设置</string>
+    <string name="ask_exit">退出程序?</string>
+    <string name="exit">退出</string>
+    <string name="more">更多</string>
+    <string name="info_remove_ad">"您的积分：%1$s
+消耗%2$s积分便可永久去除程序中的所有广告(程序升级后不受影响)。"</string>
+    <string name="earn_point">免费获得积分</string>
+    <string name="operation_success">操作成功</string>
+    <string name="info_remove_ad_success">"清除广告成功！完全退出程序后再次进入将不会出现广告。
+注：请不要随意在系统的设置中清除此程序的数据。
+感谢您的支持。"</string>
+    <string name="info_remove_ad_failure">消耗积分失败，请稍后再试。</string>
+    <string name="done">完成</string>
+    <string name="rate_me">给我们打打气</string>
+    <string name="error_no_market_client">无法打开Google Play</string>
+    <string name="info_rate">"感恩您使用EasyTouch，希望能带给您便利。
+如果您喜欢EasyTouch，一个5星支持是对我们工作的最大肯定。"</string>
+    <string name="rate">评分</string>
+    <string name="not_now">下次</string>
+    <string name="free_for_you">精心为您奉献</string>
+    <string name="close">关闭</string>
+    <string name="info_sorry">"EasyTouch可以清除广告啦！（PS:请让我们向首批清除广告的用户说声对不起，因为技术上的疏忽，导致清除广告的失误，请在新版本的EasyTouch中再次清除一次广告，积分是不需要重新获取的。）
+我们真心非常抱歉EasyTouch中嵌入那些坑爹的广告，我们想为您提供好用的软件，但国内的个人开发者不得不面对一个现实的问题，没有任何广告，明天我就不得不背著电脑到公司报道了，真心抱歉。
+希望能理解我们，让我们一起成长 :)"</string>
+    <string name="n_updatable">%1$s 新版本</string>
+    <string name="upgrade">手动升级</string>
+    <string name="checking_update">正在检查最新版本</string>
+    <string name="version_newest">当前版本已为最新版本</string>
+    <string name="feedback_content">在使用的过程中出现任何问题都可以反馈给我们,我们会尽力为你解决。</string>
+    <string name="close_app">关闭程序</string>
+    <string name="more_simple_tools">更多简单工具</string>
+    <string name="more_app">更多...等你</string>
+    <string name="app_name">EasyTouch</string>
+    <string name="q_10">如何卸载EasyTouch</string>
+    <string name="a_10">您可以在EasyTouch的菜单中找到卸载快捷方式。</string>
+    <string name="q_9">通知栏显示\"EasyTouch正在运行\"无法清除</string>
+    <string name="a_9">安卓4.3系统的新特性，所有悬浮程序都必须在通知栏显示通知，EasyTouch无法消除这个常驻通知，我们深表歉意。您可以在设置(常规设置-通知栏)中更改通知，让通知变得更有意义。</string>
+    <string name="q_3">完成了任务却没有获得金币</string>
+    <string name="a_3">遇到此问题时请检查是否有按任务要求完成任务(据了解部分任务需要安装并注册)，如都有完成却没有获得金币，请给我们来信:sheresupport@foxmail.com为您处理。</string>
+    <string name="q_4">金币读取失败</string>
+    <string name="a_4">"1.检查手机网络是否正常开启, 是否有安全软件禁止了EasyTouch的网络访问权限。
+2.您的手机ROM是否为官方版本?某些第三方ROM会禁止对广告平台的访问。"</string>
+    <string name="q_7">不能正常锁屏(锁屏后重亮)</string>
+    <string name="a_7">部分4.0系统会出现此问题，这是因为安卓系统特性决定，据了解4.3以上系统不会出现此问题。如需完美锁屏，您可以在(进阶设置-锁屏方式)中使用ROOT锁屏。</string>
+    <string name="q_8">ROOT权限是什么</string>
+    <string name="a_8">ROOT权限是安卓系统最高的权限，EasyTouch部分功能需要用户授权ROOT权限才能完成，如果您的系统没有ROOT权限，那需要自行\"刷入\"ROOT，因为涉及安全问题，EasyTouch无法提供刷入ROOT。</string>
+    <string name="q_5">主题无法安装</string>
+    <string name="a_5">"1.如果您下载主题后却无法点击安装按钮，请先检查是否有安装“护目镜(Screen Filter)”这一类的应用，若有，请先关掉这类应用，等主题安装完成后，再打开使用。
+2.请检测是否打开'未知来源'(系统设置->安全->勾选 未知来源)。
+如存在其他问题不能安装，请给我们来信:sheresupport@foxmail.com为您(附上截图如果可以)处理。"</string>
+    <string name="q_6">主题下载失败</string>
+    <string name="a_6">主题下载失败时不会扣除金币，可以尝试再次下载安装，如多次无法正常下载，希望您可以给我们来信:sheresupport@foxmail.com，协助我们为您解决问题。</string>
+    <string name="explain_fn_none">"为什么我无法删除通知(EasyTouch正在运行)?
+
+鉴于安卓4.3系统的新特性，所有悬浮程序都必须在通知栏显示通知，EasyTouch无法消除这个常驻通知，我们深表歉意，对您的使用造成了影响。"</string>
+    <string name="explain_theme_cant_install">如果您下载主题后却无法点击安装按钮，请先检查是否有安装“护目镜(Screen Filter)”这一类的应用，若有，请先关掉这类应用，等主题安装完成后，再打开使用。</string>
+    <string name="q_1">小米系统如何开机启动</string>
+    <string name="a_1">"1、设置-应用程序-EasyTouch
+2、权限管理-打开我信任该程序
+3、权限管理-打开自动启动"</string>
+    <string name="q_2">华为手机如何开机启动</string>
+    <string name="a_2">设置-全部设置-开机自启项-勾选EasyTouch</string>
+    <string name="explain_root_title">设备不支持ROOT</string>
+    <string name="explain_root">"ROOT权限是安卓系统的最高权限，好比IOS的越狱。
+一些高级功能(返回键,截图...)必须用户授权才能完成。"</string>
+    <string name="explain_root_more_info">更多信息</string>
+    <string name="explain_root_cancel">关闭</string>
+    <string name="explain_root_dont_show_again">不再提醒</string>
+    <string name="explain_cant_uninstall_ok">我知道了</string>
+    <string name="explain_cant_uninstall_title">请您熟知</string>
+    <string name="explain_cant_uninstall_1">您激活了锁屏功能。</string>
+    <string name="explain_cant_uninstall_2">1. 现在您(可能)无法通过平时的方法卸载EasyTouch，您可以在程序列表中找到这个图标进行卸载。</string>
+    <string name="explain_cant_uninstall_3">2. 或者您可以在EasyTouch的菜单中找到卸载方法。</string>
+    <string name="explain_root_recommend_recommend">推荐您使用:</string>
+    <string name="explain_root_recommend_download">下载</string>
+    <string name="explain_root_recommend_cancel">关闭</string>
+    <string name="setting">设置</string>
+    <string name="favor">常用</string>
+    <string name="home_screen">主屏幕</string>
+    <string name="gesture">手势</string>
+    <string name="lock_screen">锁屏</string>
+    <string name="screen_lightness">显示</string>
+    <string name="flashlight">手电筒</string>
+    <string name="mute">静音模式</string>
+    <string name="wifi">Wifi</string>
+    <string name="auto_orientation">自动旋转</string>
+    <string name="moblie_network">移动网络</string>
+    <string name="gps">GPS</string>
+    <string name="blue_tooth">蓝牙</string>
+    <string name="auto_screen_lightness">自动调节</string>
+    <string name="assistant_touch_enable">开启EasyTouch</string>
+    <string name="contact_us">联系我们</string>
+    <string name="easy_touch_in_here">EasyTouch在这里</string>
+    <string name="click_here_back_to_screen">点击返回到主屏幕</string>
+    <string name="normal">正常</string>
+    <string name="vibration">震动</string>
+    <string name="silent">静音</string>
+    <string name="share">分享</string>
+    <string name="thanks">感谢</string>
+    <string name="title_share">Easy Touch for android</string>
+    <string name="info_share">"Easy Touch 是一个像iPhone的AssistiveTouch的按钮, 它漂浮在你的手机屏幕(在任何APP之上).你可以非常方便地： 
+改变你手机设置(如Wifi等)
+打开你常用的App
+返回主屏幕
+锁屏(保护锁屏键)
+
+https://play.google.com/store/apps/details?id="</string>
+    <string name="apps">应用程序</string>
+    <string name="search_app">搜索应用程序</string>
+    <string name="info_read_me">"感恩您：
+EasyTouch如果对您造成不便，可以卸载的。您到设置页面找到“卸载”点击即可。非我们有意阻碍，实因系统所限制，感谢您的理解与支持。如有疑问，欢迎反馈给我们。"</string>
+    <string name="i_got_it">我知道了</string>
+    <string name="how_to_uninstall">如何卸载?</string>
+    <string name="error_open_device_admin">打开设备管理器失败,锁屏授权失败.</string>
+    <string name="error_open_app_launcher">无法打开此应用.</string>
+    <string name="recent">最近</string>
+    <string name="airplane_mode">飞行模式</string>
+    <string name="ringer_mode">声音模式</string>
+    <string name="custom_setting">自定义设置</string>
+    <string name="choose_setting">改变设置</string>
+    <string name="error_security_exception">打开失败：程序拒绝</string>
+    <string name="error_starting_activity_unknow">应用程序打开失败</string>
+    <string name="uninstall_remove_delete">卸载 EasyTouch</string>
+    <string name="error_lock_now">锁屏被拒绝, 请反馈给我们你的情况以解决这个问题, 谢谢 :)</string>
+    <string name="choose_device_manager">"1. 选择设备管理器
+2. 取消 EasyTouch.
+3. 卸载"</string>
+    <string name="alpha">透明度</string>
+    <string name="size">大小</string>
+    <string name="no_task">没有任务</string>
+    <string name="succeed_remove_ad">EasyTouch成功去除广告</string>
+    <string name="sorry">很抱歉!</string>
+    <string name="clean_ad">清除广告</string>
+    <string name="auto_open">开机启动</string>
+    <string name="info_auto_open">手机重启后自动启动EasyTouch</string>
+    <string name="sdcard_unavailable">请保证你的SDCard为可用状态</string>
+    <string name="volume">音量控制</string>
+    <string name="volume_up">音量+</string>
+    <string name="volume_down">音量-</string>
+    <string name="error_security_exception_launcher">打开失败：桌面主屏幕拒绝</string>
+    <string name="read_me">请听我说</string>
+    <string name="info_read_me_2">"* EasyTouch是病毒吗?
+绝对不是! 我们很难过,EasyTouch被判断为病毒,因为最近的版本我们加入了广告.EasyTouch完全免费,我们也一直努力不断改进,但从未在EasyTouch获得任何报酬,我们也不得不面对生活这个现实的问题.相信我们,我们从不偷偷收集您的个人隐私资料.
+你愿意继续支持EasyTouch吗?"</string>
+    <string name="yes">愿意</string>
+    <string name="no">不了</string>
+    <string name="thanks_for_understand">感谢您的支持和理解!</string>
+    <string name="virus_no">病毒? NO!</string>
+    <string name="animation_speed">动画速度</string>
+    <string name="slow">慢</string>
+    <string name="quick">快</string>
+    <string name="lockscreen_type">锁屏方式</string>
+    <string name="lockscreen_type_normal">正常(推荐)</string>
+    <string name="lockscreen_type_root">Root(供部分4.0.+安卓OS使用)</string>
+    <string name="screen_light">屏幕灯</string>
+    <string name="back">返回</string>
+    <string name="menu">菜单</string>
+    <string name="guide">使用手册</string>
+    <string name="my_theme">我的主题</string>
+    <string name="download_theme">下载主题</string>
+    <string name="easytouch_theme">EasyTouch 主题</string>
+    <string name="gold">金币</string>
+    <string name="free">限时免费</string>
+    <string name="theme">主题</string>
+    <string name="you_gold">你的金币:</string>
+    <string name="get_gold">获取金币</string>
+    <string name="theme_null">你尚未拥有任何主题</string>
+    <string name="default_theme">默认主题</string>
+    <string name="error_sdcard_not_available">请确认SDCard是否可用</string>
+    <string name="error_network_not_available">请确认网络是否开启</string>
+    <string name="theme_update_available">你的主题有了新版本</string>
+    <string name="click_to_update">点击更新</string>
+    <string name="confirm">请确认</string>
+    <string name="theme_exists">主题安装文件已经存在于你的手机上，是否需要重新下载？</string>
+    <string name="download">下载</string>
+    <string name="install">安装</string>
+    <string name="clean_ram">清理内存</string>
+    <string name="cleaned_ram_n">成功清理:%1$s</string>
+    <string name="error_clean_memory_cleanly">系统暂时无需释放内存</string>
+    <string name="control_panel">控制面板</string>
+    <string name="error_load_point">读取失败</string>
+    <string name="coins">金币</string>
+    <string name="my_coins">我的金币:</string>
+    <string name="msg_error_load_point">读取金币失败，请稍后再试</string>
+    <string name="general_settings">常规设置</string>
+    <string name="other">其他</string>
+    <string name="help">使用帮助</string>
+    <string name="update">更新程序</string>
+    <string name="settings_rate">五星好评</string>
+    <string name="tell_your_friend">推荐给我的朋友</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_text">"EasyTouch是安卓手机的辅助操控工具，目标是让您的手机更效率，更强大，更方便。感恩您的使用，我们会做得更好。
+
+联系我们：
+shereworkshop@gmail.com"</string>
+    <string name="choose_app">选择程序</string>
+    <string name="settings_panel">设置面板</string>
+    <string name="error_load_theme">"抱歉,读取失败了.
+点击刷新"</string>
+    <string name="tips_first_kill_task">"PS:
+结束任务需要 [Root] 支持."</string>
+    <string name="error_kill_task_no_root">"Root不可用
+结束任务需要 [Root] 支持."</string>
+    <string name="title_update_info_dialog">版本更新</string>
+    <string name="title_navigation_app_launcher_choose">隐藏程序</string>
+    <string name="menu_hide_app">隐藏程序</string>
+    <string name="error_operation_need_root">该操作需要Root权限支持</string>
+    <string name="first_panel">主面板</string>
+    <string name="second_panel">第二面板</string>
+    <string name="none">空</string>
+    <string name="time">时间</string>
+    <string name="clean_cache">清理缓存</string>
+    <string name="succees_clean_cache">清理缓存成功</string>
+    <string name="failure_clean_cache">清理缓存失败</string>
+    <string name="choose_alarm_app">选择常用闹钟程序</string>
+    <string name="please_choose">请选择</string>
+    <string name="tips_swipe_change_panel">滑动 左/右 切换面板</string>
+    <string name="msg_notification_new_theme">ET推出一款新主题，欢迎下载尝鲜</string>
+    <string name="title_update_to_full_version">完整版升级</string>
+    <string name="msg_update_to_full_version">您目前使用的EasyTouch为简略版，推荐升级到完全版体验更完整的EasyTouch（无须下载，点击安装即可升级）。</string>
+    <string name="msg_screenshot_begin">3秒后进行截图</string>
+    <string name="screenshot_saved_at_n">"截图保存为:
+%1$s"</string>
+    <string name="error_screenshot_not_support">您的设备暂不支持截图功能</string>
+    <string name="screenshot">截屏</string>
+    <string name="screenshot_setting">截屏设置</string>
+    <string name="invert_colors">颜色反向</string>
+    <string name="desc_invert_colors">截屏颜色不正确时请选择此项</string>
+    <string name="save_dir">保存路径</string>
+    <string name="error_screenshot_sdcard_not_available">SD卡不可用，截屏失败</string>
+    <string name="guide_screenshot">"PS:
+如果您的截屏颜色不正确，您可以在截屏设置中勾选颜色反向，再次尝试截屏是否正常，谢谢。"</string>
+    <string name="title_guide_screenshot">请注意</string>
+    <string name="screenshot_failed">屏幕截取失败</string>
+    <string name="desc_setting">"长按可打开'系统设置'"</string>
+    <string name="desc_back_key">需要 [Root权限] 支持</string>
+    <string name="desc_menu_key">需要 [Root权限] 支持</string>
+    <string name="desc_screenshot">需要 [Root权限] 支持</string>
+    <string name="auto_sync">自动同步</string>
+    <string name="about_root">关于ROOT权限</string>
+    <string name="desc_root">"ROOT权限，是安卓系统的最高权限，通过ROOT可以获得对系统的控制权，从而实现应用开发者与手机玩家对安卓手机的个性化需求。
+安卓手机的玩家会想尽一切办法去获取ROOT权限，是为了刷机，删除系统中自带的一些不会用到又占内存的应用程序以及去实现像自定义美化、截图，改变系统字体，字号等某些特殊的功能。EasyTouch向你请求开启ROOT权限，是为了给用户实现更多方便个性，快捷的功能，请放心开启。
+EasyTouch涉及ROOT权限的功能有：
+1、返回键：在任何程序上实现返回操作。
+2、菜单键：在任何程序上打开该应用的菜单选项。
+3、截屏：把手机上看到的美好时刻截下来，保存或者分享。
+4、任务管理器：快速查看并关闭不需要运行的程序。
+5、完美锁屏：有些机型因安卓4.0系统的问题，不能实现锁屏功能，借助ROOT权限即可实现。
+"</string>
+    <string name="theme_begin_download">主题下载中</string>
+    <string name="title_screenshot_preview_dialog">注意</string>
+    <string name="msg_screenshot_preview_dialog">您的截屏颜色是否正确（反色）？</string>
+    <string name="correct">正确</string>
+    <string name="not_correct">不正确</string>
+    <string name="msg_invert_colors_effective">颜色反向设置生效, 请再次尝试截屏。</string>
+    <string name="msg_loading_themes">读取主题中...</string>
+    <string name="msg_loading_themes_still">我继续努力读取...</string>
+    <string name="screenshot_first">第一张截屏!</string>
+    <string name="more_shere_app">Shere的应用</string>
+    <string name="shere_app">Shere的应用</string>
+    <string name="other_cool_apps">-------- 更多精品应用 --------</string>
+    <string name="custom_action">自定义操作</string>
+    <string name="custom_action_click">单击</string>
+    <string name="custom_action_double_click">双击</string>
+    <string name="custom_action_long_click">长按</string>
+    <string name="custom_action_open_easy_touch">打开Easy touch</string>
+    <string name="custom_action_hide_to_notification_bar">隐藏至通知栏</string>
+    <string name="custom_action_open_system_recent_task">打开系统最近任务</string>
+    <string name="custom_action_open_recent_task">打开最近任务</string>
+    <string name="custom_action_open_apps">打开程序列表</string>
+    <string name="custom_action_lock_screen">锁屏</string>
+    <string name="title_custom_action_choose_click">单击时:</string>
+    <string name="title_custom_action_choose_double_click">双击时:</string>
+    <string name="title_custom_action_choose_long_click">长按时:</string>
+    <string name="hide_when_screen_off">锁屏时隐藏</string>
+    <string name="info_hide_when_screen_off">Easytouch可能无法在第三方桌面(Launcher)中解锁后自动出现</string>
+    <string name="screen_timeout">屏幕超时</string>
+    <string name="screen_timeout_minutes">%1$s 分钟</string>
+    <string name="screen_timeout_second">%1$s 秒钟</string>
+    <string name="battery">电量显示</string>
+    <string name="screenshot_mode">截屏模式</string>
+    <string name="screenshot_mode_defaut">默认截图</string>
+    <string name="screenshot_mode_power_home">电源键 + Home键</string>
+    <string name="screenshot_mode_power_volume">电源键 + 音量减</string>
+    <string name="screenshot_voice_switcher">默认截图声音开关</string>
+    <string name="screenshot_voice_on">开</string>
+    <string name="screenshot_voice_off">关</string>
+    <string name="toast_error_delete_theme">当前主题不能被删除</string>
+    <string name="interface_setting">界面设置</string>
+    <string name="help_info">"为什么有两个Easy touch?
+请允许我向您道歉,因为旧帐号无法再使用的原因,导致以前旧版的Easy touch将无法进行更新,感谢您的支持,我们会继续努力最到最好。
+如果您喜欢Easy touch,希望可以帮帮她,给她一个五星的鼓励。"</string>
+    <string name="title_help_info">抱歉</string>
+    <string name="help_help">鼓励</string>
+    <string name="help_next_time">下次</string>
+    <string name="cover_app_name">Easy Touch</string>
+    <string name="cover_slogan">一步到位，随心操控</string>
+    <string name="toast_delete_theme">长按可以删除主题</string>
+    <string name="activity_theme_market_bought">已兑换</string>
+    <string name="activity_theme_market_status_buy">兑换</string>
+    <string name="activity_theme_market_status_bought">下载</string>
+    <string name="activity_theme_market_status_update">更新</string>
+    <string name="activity_theme_market_status_Installed">使用</string>
+    <string name="activity_theme_my_theme">我的主题</string>
+    <string name="activity_theme_market_coin_loading">loading</string>
+    <string name="toast_error_coin_loading">金币正在读取中</string>
+    <string name="toast_error_coin_not_enough">您的金币不足</string>
+    <string name="activity_tab_ui_setting">界面设置</string>
+    <string name="activity_device_admin_reason">用于Easy touch锁屏功能</string>
+    <string name="activity_how_to_uninstall_exp_1">请听我说</string>
+    <string name="activity_how_to_uninstall_exp_2">恭喜您, 成功激活锁屏功能。</string>
+    <string name="activity_how_to_uninstall_exp_3">如果有一天您不再需要Easy touch了, 您可以通过程序列表中的\"卸载\"进行删除。</string>
+    <string name="activity_how_to_uninstall_exp_4">为什么需要这样??</string>
+    <string name="activity_how_to_uninstall_exp_5">"因为难于卸载的原因(激活了锁屏需要多一步才能卸载), 我们收到了许多的一星评分, 我们对此非常抱歉, 对您的使用造成了影响。
+但现在您可以轻松可以通过这个方法进行删除卸载。"</string>
+    <string name="activity_how_to_uninstall_exp_6">如果您不需要，也可以通过以下设置隐藏这个图标:</string>
+    <string name="activity_how_to_uninstall_ok">好的，我都明白了</string>
+    <string name="app_name_uninstall">EasyTouch卸载器</string>
+    <string name="activity_setting_item_show_uninstall">"显示 '卸载'图标"</string>
+    <string name="activity_setting_item_show_uninstall_exp">"在您的程序列表中加入'卸载'图标，如果您在进行卸载时遇到了问题。"</string>
+    <string name="toast_success_screenshot">屏幕截图成功</string>
+    <string name="toast_error_screenshot">屏幕截图失败</string>
+    <string name="toast_error_root_not_has_root">该功能需要ROOT权限支持</string>
+    <string name="toast_error_root_grant_permission">获取ROOT权限失败</string>
+    <string name="toast_error_back_key">返回键执行失败</string>
+    <string name="toast_error_menu_key">菜单键执行失败</string>
+    <string name="toast_error_power_key">电源键执行失败</string>
+    <string name="activity_setting_screenshot_delay">截图延迟</string>
+    <string name="activity_setting_screenshot_delay_0">不延迟</string>
+    <string name="activity_setting_screenshot_delay_3">3 秒</string>
+    <string name="activity_setting_screenshot_delay_5">5 秒</string>
+    <string name="activity_setting_screenshot_delay_10">10 秒</string>
+    <string name="activity_setting_screenshot_delay_20">20 秒</string>
+    <string name="activity_setting_save">保存路径</string>
+    <string name="toast_error_save_dir">保存路径失败</string>
+    <string name="toast_success_save_dir">保存路径成功</string>
+    <string name="notification_success_screenshot">截截图成功</string>
+    <string name="activity_theme_market_error_load_point_network">网络不可用</string>
+    <string name="activity_theme_market_error_load_point_blocked">广告被禁止访问</string>
+    <string name="activity_theme_market_loading_point">读取中</string>
+    <string name="panel_volumn_ringtone">铃声</string>
+    <string name="panel_volumn_media">音乐、影片、游戏和其他媒体</string>
+    <string name="panel_volumn_notifications">通知</string>
+    <string name="panel_volumn_system">系统</string>
+    <string name="dialog_exit_ad_exit">退出程序</string>
+    <string name="toast_earned_coins">成功获得 %1$s 金币</string>
+    <string name="notification_foreground_title">EasyTouch</string>
+    <string name="notification_foreground_text">点击进行程序设置</string>
+    <string name="activity_theme_shop_get_coin">+ 获取金币</string>
+    <string name="activity_nav_theme_station">主题</string>
+    <string name="activity_nav_my_theme">我的主题</string>
+    <string name="activity_nav_setting">程序设置</string>
+    <string name="activity_nav_panel_setting">面板设置</string>
+    <string name="activity_nav_my_coins">金币</string>
+    <string name="advanced_settings">进阶设置</string>
+    <string name="display_settings">显示设置</string>
+    <string name="activity_setting_display_setting">显示设置</string>
+    <string name="toast_theme_download_begin">正在下载主题:%1$s</string>
+    <string name="toast_theme_purchase_success">兑换成功:%1$s</string>
+    <string name="toast_theme_download_fail">下载失败:%1$s</string>
+    <string name="toast_theme_install_succ">主题安装成功</string>
+    <string name="activity_theme_shop_downloading_theme_progress">正在下载 %1$s: %2$s%%</string>
+    <string name="notification_theme_download_error_title">出现错误</string>
+    <string name="notification_theme_download_error_text">%1$s 下载失败</string>
+    <string name="activity_topbar_menu">菜单</string>
+    <string name="activity_topbar_back">返回</string>
+    <string name="activity_topbar_title_theme_shop">主题</string>
+    <string name="activity_topbar_title_my_theme">我的主题</string>
+    <string name="activity_topbar_title_settings">程序设置</string>
+    <string name="activity_topbar_title_my_coins">金币</string>
+    <string name="activity_topbar_title_panel_setting">面板设置</string>
+    <string name="activity_custom_notification_setting_title">自定义通知</string>
+    <string name="activity_custom_notification_setting_preview">预览</string>
+    <string name="activity_custom_notification_setting_icon_color">图标风格</string>
+    <string name="activity_custom_notification_setting_icon_color_white">白色</string>
+    <string name="activity_custom_notification_setting_icon_color_black">黑色</string>
+    <string name="activity_setting_notification">通知栏设置</string>
+    <string name="activity_custom_notification_item_select_title">选择快捷方式</string>
+    <string name="activity_custom_notification_item_select_section_app">应用</string>
+    <string name="activity_custom_notification_item_select_section_app_shortcut">应用程序</string>
+    <string name="activity_custom_notification_item_select_section_switch">系统开关</string>
+    <string name="activity_custom_notification_item_select_notification_null">空</string>
+    <string name="activity_custom_notification_item_select_notification_screen_brightness">屏幕亮度</string>
+    <string name="activity_custom_notification_item_select_notification_volume_mode">音量模式</string>
+    <string name="activity_custom_notification_item_select_notification_auto_rotation">屏幕自动旋转</string>
+    <string name="activity_custom_notification_item_select_notification_flashlight">闪关灯</string>
+    <string name="activity_custom_notification_item_select_notification_bluetooth">蓝牙</string>
+    <string name="activity_custom_notification_item_select_notification_mobi_network">移动网络</string>
+    <string name="activity_custom_notification_item_select_notification_wifi">Wifi</string>
+    <string name="activity_custom_notification_item_select_notification_gps">GPS</string>
+    <string name="activity_custom_notification_item_select_notification_airplane_mode">飞行模式</string>
+    <string name="activity_custom_notification_item_select_notification_auto_sync">自动同步</string>
+    <string name="activity_notification_setting_title">通知设置</string>
+    <string name="activity_notification_setting_select_notification">选择通知</string>
+    <string name="activity_notification_setting_notification_none">空</string>
+    <string name="activity_notification_setting_notification_setting">快捷配置EasyTouch</string>
+    <string name="activity_notification_setting_notification_custom">自定快捷方式</string>
+    <string name="activity_notification_setting_notification_task_manager">任务管理(正在开发中)</string>
+    <string name="activity_nav_panel_uninstall">卸载EasyTouch</string>
+    <string name="i_am_happy">高兴</string>
+    <string name="i_am_not_happy">不高兴</string>
+    <string name="give_me_five">5星鼓励</string>
+    <string name="i_am_happy_thanks">感谢您!</string>
+    <string name="activity_q_and_a_title">帮助</string>
+    <string name="activity_nav_panel_help">帮助</string>
+    <string name="toast_storage_space_not_enought">存储空间需要至少3M</string>
+    <string name="notification_theme_download_timeout_title">下载失败:%1$s</string>
+    <string name="notification_theme_download_timeout_text">网络连接超时</string>
+    <string name="error_load_theme_network_not_available">"读取失败
+网络尚未开启"</string>
+    <string name="activity_uninstall_uninstall">立即卸载</string>
+    <string name="activity_uninstall_dont_show">"我知道如何卸载,
+不再显示该图标"</string>
+    <string name="custom_action_home_key">主屏幕键</string>
+    <string name="custom_action_back_key">返回键</string>
+    <string name="notification_theme_download_restart">点击尝试重新下载</string>
+    <string name="smart_displacement">智能位移</string>
+    <string name="smart_displacement_desc">在悬浮按钮位置打开EasyTouch,操作更流畅</string>
+    <string name="ac_setting_screenshot_dir_root">根目录</string>
+    <string name="ac_setting_screenshot_dir_image">图片目录</string>
+    <string name="ac_setting_screenshot_dir_dcim">照相机目录</string>
+    <string name="ac_setting_screenshot_dir_et">EASYTOUCH目录</string>
+    <string name="ac_setting_screenshot_dir_customize">自定义</string>
+    <string name="ac_screenshot_dir_edit_done">确定</string>
+    <string name="ac_screenshot_dir_edit_cancel">取消</string>
+    <string name="toast_screenshot_dir_not_legal">文件目录不合法</string>
+    <string name="helpdialog_text">"MIUI下请按照以下步骤进行设置 ,
+以正常使用EasyTouch
+1、进入应用列表-EasyTouch-应用信息
+2、打开“显示悬浮窗”与“自定义通知”
+3、点击“结束运行”
+在桌面重新打开EasyTouch，即可使用。"</string>
+    <string name="helpdialog_button">点击进入设置</string>
+    <string name="updatedialog_text">建议升级至EasyTouch最新版</string>
+    <string name="updatedialog_ok">下载</string>
+    <string name="updatedialog_success">下载成功</string>
+    <string name="updatedialog_failed">下载失败</string>
+    <string name="updatedialog_downloaded">已下载</string>
+    <string name="updatedialog_no">取消</string>
+    <string name="desc_theme">选择主题</string>
+    <string name="activity_theme_market_status_Using">已使用</string>
+    <string name="lastpage">上一页</string>
+    <string name="oldversion">老</string>
+    <string name="newversion">新</string>
+    <string name="versiontitle">版本检查</string>
+    <string name="notip">不再提示</string>
+    <string name="tip_1">发现EasyTouch</string>
+    <string name="tip_2">版本,建议您卸载早期版本或日后手动卸载。</string>
+    <string name="uninstall">卸载</string>
+    <string name="str_advise_feedback_title">意见反馈</string>
+    <string name="str_advise_feedback_input">请输入您的想法和建议</string>
+    <string name="str_advise_feedback_contact_way">联系方式（QQ、邮箱、电话）</string>
+    <string name="error_network">网络错误</string>
+    <string name="feedback_null">反馈内容不能为空</string>
+    <string name="commiting">提交中...</string>
+</resources>

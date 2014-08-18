@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="spacing_type">
+        <enum name="right_offset" value="0" />
+        <enum name="actions_width" value="1" />
+    </attr>
+    <attr name="fade_type">
+        <enum name="none" value="0" />
+        <enum name="actions" value="1" />
+        <enum name="content" value="2" />
+        <enum name="both" value="3" />
+    </attr>
+    <attr name="effects">
+        <enum name="none" value="0" />
+        <enum name="scroll_opening" value="1" />
+        <enum name="scroll_closing" value="2" />
+        <enum name="scroll" value="3" />
+        <enum name="fling_opening" value="4" />
+        <enum name="fling_closing" value="8" />
+        <enum name="fling" value="12" />
+        <enum name="all" value="15" />
+    </attr>
+    <attr name="swiping_type">
+        <enum name="full" value="0" />
+        <enum name="edge" value="1" />
+    </attr>
+    <attr name="spacing" format="dimension" />
+    <attr name="actions_spacing" format="dimension" />
+    <attr name="actions_layout" format="reference" />
+    <attr name="content_layout" format="reference" />
+    <attr name="shadow_drawable" format="reference" />
+    <attr name="shadow_width" format="dimension" />
+    <attr name="fade_max_value" format="integer" />
+    <attr name="fling_duration" format="integer" />
+    <attr name="swiping_edge_width" format="dimension" />
+    <attr name="effect_actions" format="reference" />
+    <attr name="effect_content" format="reference" />
+    <attr name="effects_interpolator" format="reference" />
+    <attr name="typeface_dir" format="string" />
+</resources>

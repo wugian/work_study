@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/welcome_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/welcome_page_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/radio1" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/radio1" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:button="@drawable/welcome_page_tag_set" />
+        <RadioButton android:id="@id/radio2" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="3.0dip" android:button="@drawable/welcome_page_tag_set" />
+        <RadioButton android:id="@id/radio3" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="3.0dip" android:button="@drawable/welcome_page_tag_set" />
+        <RadioButton android:id="@id/radio4" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="3.0dip" android:button="@drawable/welcome_page_tag_set" />
+    </RadioGroup>
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_goMainPage" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

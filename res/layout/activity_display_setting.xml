@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/btn_topbar_back" android:background="@drawable/title_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topbar_back" />
+            </LinearLayout>
+            <TextView android:text="@string/activity_setting_display_setting" style="@style/Text_Navigation_Title" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="16.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/animation_speed" />
+                <View style="@style/Separator_Default" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/rg_anim_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <RadioButton android:textSize="16.0sp" android:textColor="@color/text_main" android:id="@id/rb_slow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/selector_btn_radio_holo_dark" android:text="@string/slow" android:singleLine="true" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="16.0sp" android:textColor="@color/text_main" android:id="@id/rb_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/selector_btn_radio_holo_dark" android:text="@string/normal" android:singleLine="true" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="16.0sp" android:textColor="@color/text_main" android:id="@id/rb_quick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/selector_btn_radio_holo_dark" android:text="@string/quick" android:singleLine="true" android:layout_weight="1.0" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/size" />
+                <View style="@style/Separator_Default" />
+                <SeekBar android:id="@id/sb_size" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/seekbar_bg" android:thumb="@drawable/seekbar_control" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minHeight="@dimen/height_list_item">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alpha" />
+                <View style="@style/Separator_Default" />
+                <SeekBar android:id="@id/sb_alpha" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/seekbar_bg" android:thumb="@drawable/seekbar_control" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="0.0dip" android:paddingTop="16.0dip" android:paddingRight="0.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/theme_first_panel_0" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/first_image_0" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_0" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_0" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_0" android:layout_marginTop="4.0dip" android:layout_below="@id/first_image_0" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_0" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_0" android:layout_alignTop="@id/first_image_0" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_1" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/first_image_1" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_1" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_1" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_1" android:layout_marginTop="4.0dip" android:layout_below="@id/first_image_1" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_1" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_1" android:layout_alignTop="@id/first_image_1" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_2" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/first_image_2" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_2" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_2" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_2" android:layout_marginTop="4.0dip" android:layout_below="@id/first_image_2" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_2" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_2" android:layout_alignTop="@id/first_image_2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_3" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/first_image_3" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_3" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_3" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_3" android:layout_marginTop="4.0dip" android:layout_below="@id/first_image_3" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_3" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_3" android:layout_alignTop="@id/first_image_3" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_4" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/first_image_4" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_4" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_4" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_4" android:layout_marginTop="4.0dip" android:maxLength="7" android:layout_below="@id/first_image_4" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_4" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_4" android:layout_alignTop="@id/first_image_4" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_5" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/first_image_5" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_5" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_5" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_5" android:layout_marginTop="4.0dip" android:maxLength="7" android:layout_below="@id/first_image_5" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_5" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_5" android:layout_alignTop="@id/first_image_5" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_6" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/first_image_6" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_6" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_6" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_6" android:layout_marginTop="4.0dip" android:maxLength="7" android:layout_below="@id/first_image_6" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_6" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_6" android:layout_alignTop="@id/first_image_6" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_7" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/first_image_7" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_7" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_7" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_7" android:layout_marginTop="4.0dip" android:maxLength="7" android:layout_below="@id/first_image_7" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_7" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_7" android:layout_alignTop="@id/first_image_7" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/theme_first_panel_8" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/first_image_8" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <ImageView android:id="@id/first_download_8" android:background="@drawable/translucent_drawable" android:src="@drawable/download" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:id="@id/first_progress_8" android:layout_centerHorizontal="true" style="@style/Theme_Image" />
+            <TextView android:gravity="center" android:id="@id/first_tv_8" android:layout_marginTop="4.0dip" android:maxLength="7" android:layout_below="@id/first_image_8" android:layout_centerHorizontal="true" style="@style/Theme_Text" />
+            <ImageView android:id="@id/first_imagetag_8" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_flag_selected_theme" android:layout_alignLeft="@id/first_image_8" android:layout_alignTop="@id/first_image_8" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ballview" android:paddingTop="10.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

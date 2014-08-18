@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_help" android:background="@drawable/shezhitupian" android:layout_width="270.0dip" android:layout_height="460.0dip" />
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_help" android:background="@drawable/btn_xiaomi_help_selector" android:layout_width="270.0dip" android:layout_height="wrap_content" android:text="@string/helpdialog_button" android:shadowColor="#33000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="5.0" android:layout_below="@id/iv_help" />
+    </RelativeLayout>
+</RelativeLayout>

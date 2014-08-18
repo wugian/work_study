@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_topbar_back" android:background="@drawable/title_bg1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topbar_back" />
+            </LinearLayout>
+            <TextView android:text="@string/activity_custom_notification_setting_title" style="@style/Text_Navigation_Title" />
+        </RelativeLayout>
+        <View style="@style/Separator_Topbar" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_custom_notification_setting_preview" style="@style/Text_Main_Default" />
+            <View style="@style/Separator_Default" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:id="@id/item_0" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_0" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_1" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_1" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_2" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_2" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_3" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_3" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_4" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_4" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_5" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_5" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_6" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_6" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/item_7" android:background="@color/transparent" style="@style/Custom_Notification_Item">
+                    <ImageView android:id="@id/icon_7" android:background="@drawable/bg_icon_panel_setting" style="@style/Custom_Notification_Item_Icon" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/activity_custom_notification_setting_icon_color" style="@style/Text_Main_Default" />
+            <View style="@style/Separator_Default" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <CheckBox android:id="@id/cb_style_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_btn_check_holo" />
+                <TextView android:textColor="@color/black" android:background="@drawable/item_custom_notification_setting_color_white" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/activity_custom_notification_setting_icon_color_white" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <CheckBox android:id="@id/cb_style_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_btn_check_holo" />
+                <TextView android:textColor="@color/white" android:background="@drawable/item_custom_notification_setting_color_black" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/activity_custom_notification_setting_icon_color_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/update_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/updatedialog_text" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/progresslayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/down_pb" android:background="@drawable/update_bg" android:layout_width="200.0dip" android:layout_height="6.0dip" android:layout_marginLeft="12.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/updatedialog_progress" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/down_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/down_pb" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btnlayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <Button android:textSize="18.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/down_cancel" android:background="@drawable/cancel_btn" android:layout_width="120.0dip" android:layout_height="40.0dip" android:text="@string/updatedialog_no" />
+        <Button android:textSize="18.0sp" android:textColor="#ff62c3c9" android:layout_gravity="center_horizontal" android:id="@id/down_bt" android:background="@drawable/update_btn" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="@string/updatedialog_ok" />
+    </LinearLayout>
+</LinearLayout>

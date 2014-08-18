@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.0">
+        <ImageView android:id="@id/rightbg" android:layout_width="66.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_topbar_back" android:background="@drawable/title_bg1" android:layout_width="294.0dip" android:layout_height="50.0dip" android:layout_toRightOf="@id/rightbg" android:layout_alignParentLeft="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topbar_back" />
+        </LinearLayout>
+        <TextView android:text="@string/activity_q_and_a_title" style="@style/Text_Navigation_Title" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/qascroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/q_1" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_1" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_1" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_2" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_2" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_2" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_3" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_3" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_3" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_4" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_4" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_4" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_5" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_5" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_5" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_6" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_6" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_6" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_7" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_7" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_7" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_8" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_8" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_8" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_9" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_9" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_9" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/q_10" android:background="@drawable/selector_default_highlight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ItemQAndA">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_question" />
+                    <TextView android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q_10" android:marqueeRepeatLimit="marquee_forever" style="@style/TextSettingItemTitle" />
+                </LinearLayout>
+                <View style="@style/Separator_Default" />
+                <TextView android:id="@id/content" android:text="@string/a_10" style="@style/ItemQAndAContent" />
+                <View android:id="@id/line" android:visibility="gone" style="@style/Separator_Default" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

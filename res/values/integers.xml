@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_actionscontentview_fade_max_value">170</integer>
+    <integer name="default_actionscontentview_fling_duration">900</integer>
+    <integer name="default_pref_fade_max_value">100</integer>
+    <integer name="default_pref_fling_delay">900</integer>
+</resources>

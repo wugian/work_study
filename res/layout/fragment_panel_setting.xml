@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bottom_bg" android:background="@drawable/bg_panel_setting_bottom" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fffafbfd" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_color_panel_setting_tab_text" android:gravity="center" android:id="@id/first_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/first_panel" android:singleLine="true" android:layout_weight="1.0" />
+            <View android:background="@drawable/panel_line" android:layout_width="2.0dip" android:layout_height="28.0dip" android:layout_weight="0.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_color_panel_setting_tab_text" android:gravity="center" android:id="@id/second_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_panel" android:singleLine="true" android:layout_weight="1.0" />
+            <View android:background="@drawable/panel_line" android:layout_width="2.0dip" android:layout_height="28.0dip" android:layout_weight="0.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_color_panel_setting_tab_text" android:gravity="center" android:id="@id/settings_panel" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/settings_panel" android:singleLine="true" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Line" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@id/lay_first_panel" android:background="@drawable/bg_touch" android:layout_width="@dimen/size_dialog" android:layout_height="@dimen/size_dialog" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:paddingLeft="18.0dip" android:paddingTop="20.0dip" android:paddingRight="18.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/btn_main_panel_0" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_1" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_2" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_6" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_7" android:layout_centerVertical="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_main_panel_8" android:layout_centerInParent="true" style="@style/Icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/lay_second_panel" android:background="@drawable/bg_touch" android:visibility="gone" android:layout_width="@dimen/size_dialog" android:layout_height="@dimen/size_dialog" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:paddingLeft="18.0dip" android:paddingTop="20.0dip" android:paddingRight="18.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/btn_second_panel_0" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_1" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_2" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_6" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_7" android:layout_centerVertical="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_second_panel_8" android:layout_centerInParent="true" style="@style/Icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/lay_setting_panel" android:background="@drawable/bg_touch" android:visibility="gone" android:layout_width="@dimen/size_dialog" android:layout_height="@dimen/size_dialog" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:paddingLeft="18.0dip" android:paddingTop="20.0dip" android:paddingRight="18.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/btn_setting_1" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_2" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_3" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_4" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_6" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_7" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+                    <TextView android:id="@id/btn_setting_8" android:layout_centerVertical="true" style="@style/Icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

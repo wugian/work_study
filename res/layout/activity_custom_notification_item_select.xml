@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/bg_topbar" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/activity_custom_notification_item_select_title" style="@style/Text_Navigation_Title" />
+    </RelativeLayout>
+    <View android:layout_weight="0.0" style="@style/Separator_Topbar" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_custom_notification_item_select_section_app" />
+        <View style="@style/Separator_Default" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/app_shortcut" android:background="@drawable/selector_default_highlight" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/bg_icon_panel_setting" android:padding="3.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_custom_notification_select_app_shortcut" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/activity_custom_notification_item_select_section_app_shortcut" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_custom_notification_item_select_section_switch" />
+        <View style="@style/Separator_Default" />
+        <ListView android:id="@id/lv_switch_items" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_default_highlight" android:cacheColorHint="@color/transparent" android:divider="@color/activity_divider" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

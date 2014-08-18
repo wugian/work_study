@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shere.assistivetouch.ui.WindowView android:id="@id/lay_outter" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_easytouch" android:background="@drawable/bg_touch" android:layout_width="@dimen/size_dialog" android:layout_height="@dimen/size_dialog" android:layout_centerInParent="true">
+        <android.support.v4.view.ViewPager android:id="@id/lay_main_custom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v4.view.ViewPager android:id="@id/lay_main_theme" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/lay_setting" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/btn_back_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_back" android:layout_centerInParent="true" />
+            <TextView android:id="@id/btn_setting_1" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_2" android:layout_centerHorizontal="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_3" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_4" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_6" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_7" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Icon" />
+            <TextView android:id="@id/btn_setting_8" android:layout_centerVertical="true" style="@style/Icon" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lay_favor" android:padding="@dimen/padding_favor_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/btn_back_favor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_back" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/btn_app_1" android:tag="1" android:text="@string/screen_lightness" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_2" android:tag="2" android:text="@string/auto_orientation" android:layout_centerHorizontal="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_3" android:tag="3" android:text="@string/flashlight" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_4" android:tag="4" android:text="@string/blue_tooth" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_5" android:tag="5" android:text="@string/moblie_network" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_6" android:tag="6" android:text="@string/wifi" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_7" android:tag="7" android:text="@string/gps" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Favor" />
+            <ImageView android:id="@id/btn_app_8" android:tag="8" android:text="@string/mute" android:layout_centerVertical="true" style="@style/Favor" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lay_screen_lightness" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/btn_back_screen_lightness" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_back" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lay_screen_lightness_operation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/btn_back_screen_lightness">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <ImageView android:id="@id/iv_ic_screen_lightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_screen_lightness" />
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:id="@id/cb_auto_screen_lightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_screen_lightness" />
+                    </LinearLayout>
+                </LinearLayout>
+                <SeekBar android:id="@id/sb_screen_lightness" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <ImageView android:id="@id/iv_ic_screen_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_screen_timeout" />
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="20.0sp" android:id="@id/tv_screen_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <SeekBar android:id="@id/sb_screen_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lay_volumn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/btn_back_volumn" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_ic_back" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lay_volumn_operation" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/btn_back_volumn">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/LinearLayoutVolumnSeekBar">
+                    <TextView android:textColor="@color/color_icon_text" android:id="@id/tv_volumn_ringer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/panel_volumn_ringtone" android:singleLine="true" />
+                    <SeekBar android:id="@id/sb_volumn_ringer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SeekBarVolumn" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/LinearLayoutVolumnSeekBar">
+                    <TextView android:textColor="@color/color_icon_text" android:id="@id/tv_volumn_media" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/panel_volumn_media" android:singleLine="true" />
+                    <SeekBar android:id="@id/sb_volumn_media" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SeekBarVolumn" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/LinearLayoutVolumnSeekBar">
+                    <TextView android:textColor="@color/color_icon_text" android:id="@id/tv_volumn_notification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/panel_volumn_notifications" android:singleLine="true" />
+                    <SeekBar android:id="@id/sb_volumn_notification" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SeekBarVolumn" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/LinearLayoutVolumnSeekBar">
+                    <TextView android:textColor="@color/color_icon_text" android:id="@id/tv_volumn_system" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/panel_volumn_system" android:singleLine="true" />
+                    <SeekBar android:id="@id/sb_volumn_system" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SeekBarVolumn" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.shere.assistivetouch.ui.WindowView>
