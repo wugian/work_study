@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="pan">
+        <attr name="state_pressup" format="boolean" />
+        <attr name="state_pressdown" format="boolean" />
+        <attr name="state_pressleft" format="boolean" />
+        <attr name="state_pressright" format="boolean" />
+        <attr name="state_presscenter" format="boolean" />
+    </declare-styleable>
+
+</resources>

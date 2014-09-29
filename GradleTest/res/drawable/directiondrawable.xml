@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.xgimi.gradletest">
+
+    <item android:drawable="@drawable/four_dimen_navigation_press_up" app:state_pressup="true"/>
+    <item android:drawable="@drawable/four_dimen_navigation_press_down" app:state_pressdown="true"/>
+    <item android:drawable="@drawable/four_dimen_navigation_press_left" app:state_pressleft="true"/>
+    <item android:drawable="@drawable/four_dimen_navigation_press_right" app:state_pressright="true"/>
+    <item android:drawable="@drawable/four_dimen_navigation_press_center" app:state_presscenter="true"/>
+    <item android:drawable="@drawable/four_dimen_navigation_normal"/>
+
+</selector>
