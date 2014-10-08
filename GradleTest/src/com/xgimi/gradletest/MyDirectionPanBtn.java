@@ -1,13 +1,13 @@
 package com.xgimi.gradletest;
 
-
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.Button;
 
 public class MyDirectionPanBtn extends Button {
+
+	IBtnClick iClick;
 
 	private OnDirectionListening onDirectionListening;
 
@@ -24,6 +24,14 @@ public class MyDirectionPanBtn extends Button {
 	private int mIsCenter = 5;
 
 	private int nowStatus = 0;
+
+	public int getNowStatus() {
+		return nowStatus;
+	}
+
+	public void setClick(IBtnClick iClick) {
+		this.iClick = iClick;
+	}
 
 	public MyDirectionPanBtn(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -49,21 +57,30 @@ public class MyDirectionPanBtn extends Button {
 
 		switch (nowStatus) {
 		case 0:
-
 			break;
 		case 1:
+			if (iClick != null)
+				iClick.up();
 			mergeDrawableStates(drawableState, STATE_UP);
 			break;
 		case 2:
+			if (iClick != null)
+				iClick.down();
 			mergeDrawableStates(drawableState, STATE_DOWN);
 			break;
 		case 3:
+			if (iClick != null)
+				iClick.left();
 			mergeDrawableStates(drawableState, STATE_LEFT);
 			break;
 		case 4:
+			if (iClick != null)
+				iClick.right();
 			mergeDrawableStates(drawableState, STATE_RIGHT);
 			break;
 		case 5:
+			if (iClick != null)
+				iClick.center();
 			mergeDrawableStates(drawableState, STATE_CENTER);
 			break;
 
@@ -118,9 +135,11 @@ public class MyDirectionPanBtn extends Button {
 			break;
 
 		case MotionEvent.ACTION_UP:
-
 			post(runnable);
-
+		case MotionEvent.ACTION_MOVE:
+			post(runnable);
+			break;
+		default:
 			break;
 
 		}
@@ -138,5 +157,17 @@ public class MyDirectionPanBtn extends Button {
 			nowStatus = 0;
 		}
 	};
+
+	public interface IBtnClick {
+		public void up();
+
+		public void down();
+
+		public void center();
+
+		public void left();
+
+		public void right();
+	}
 
 }
