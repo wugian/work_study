@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--//TODO add more attributes to control text the text color,text size,bg color,forecolor-->
+    <declare-styleable name="SwitchView">
+        <attr name="normal_text_color" format="reference|color" />
+        <attr name="text_left" format="reference" />
+        <attr name="text_right" format="reference" />
+        <attr name="focus_text_color" format="reference|color" />
+        <attr name="text_size" format="integer" />
+        <attr name="slide_bg_drawable" format="reference" />
+        <attr name="slide_drawable" format="reference" />
+    </declare-styleable>
+</resources>

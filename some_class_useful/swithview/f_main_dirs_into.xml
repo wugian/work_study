@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 从首页进入此布局，然后是网络目录，本地目录的选项 hailongqiu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_lay_bg_color"
+    android:orientation="vertical">
+
+
+    <!-- 标题栏 -->
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/i_title_bar" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!--//TODO add more attributes to control the text color,text size,bg color,forecolor-->
+        <com.xgimi.yunphotos.widgets.SwitchView
+            android:id="@+id/switch_btn"
+            app:slide_bg_drawable="@drawable/slide_bg_drawable"
+            app:slide_drawable="@drawable/slide_drawable"
+            app:text_size="20"
+            app:normal_text_color="@color/white"
+            app:text_left="@string/remote_album"
+            app:text_right="@string/local_album"
+            app:focus_text_color="@color/start_login_btn_normal_color"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!-- 工具条 -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云端相册" />
+
+        <Button
+            android:id="@+id/local_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地相册" />
+    </LinearLayout>
+
+    <!-- 下半部整体布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- 相册目录<网络图片，本地图片>显示 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/dirs_vpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

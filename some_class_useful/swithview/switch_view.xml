@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_lyt"
+    android:layout_width="match_parent"
+    android:background="@drawable/slide_bg_drawable"
+    android:layout_height="38dp">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/switch_cursor_iv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/slide_drawable"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dip"
+            android:layout_marginRight="0.5dip" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:layout_marginLeft="0.5dip"
+            android:layout_marginRight="0.5dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_left"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="left"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="0dip"
+            android:text="right"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
