@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start_view">StartViewActivity</string>
+    <string name="title_activity_auto_type">AutoTypeActivity</string>
+    <string name="title_activity_award">AwardActivity</string>
+</resources>
